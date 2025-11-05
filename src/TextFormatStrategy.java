@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
-public class TextFormatStrategy {
+public interface TextFormatStrategy {
+    String format(String text);
+    String getName();
 }
