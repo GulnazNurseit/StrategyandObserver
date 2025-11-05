@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+ublic class UnderlineTextFormat implements TextFormatStrategy {
+    @Override
+    public String format(String text) {
+        return "\u001B[4m" + text + "\u001B[0m";
+    }
 
-public class UnderlineTextFormat {
+    @Override
+    public String getName() {
+        return "Underline";
+    }
 }
